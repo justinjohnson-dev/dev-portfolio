@@ -10,13 +10,13 @@ import {
 } from './NavBarElements';
 import { FaBars } from 'react-icons/fa';
 
-const Navbar = () => {
+const NavBar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavBarContainer>
           <NavLogo href='/'>Justin-Johnson-Dev</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
@@ -30,4 +30,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;

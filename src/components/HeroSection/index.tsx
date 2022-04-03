@@ -24,7 +24,7 @@ const HeroSection = () => {
       <HeroBg>
         <VideoBg autoPlay loop muted src='/video.mp4' />
       </HeroBg>
-      {/* <HeroContent>
+      <HeroContent>
         <HeroH1>@ Justin Johnson</HeroH1>
         <HeroP>Software Engineer | Data Engineer | Computer Enthusiast</HeroP>
         <HeroBtnWrapper>
@@ -38,7 +38,7 @@ const HeroSection = () => {
             Dive in {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
-      </HeroContent> */}
+      </HeroContent>
     </HeroContainer>
   );
 };

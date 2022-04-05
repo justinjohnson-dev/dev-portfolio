@@ -29,7 +29,7 @@ const HeroSection = () => {
         <HeroP>Software Engineer | Data Engineer | Computer Enthusiast</HeroP>
         <HeroBtnWrapper>
           <Button
-            to=''
+            to='about'
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'

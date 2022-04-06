@@ -10,9 +10,10 @@ import {
   HeroP,
   HeroBtnWrapper,
 } from './HeroElements';
+
 import { Button } from '../ButtonElement';
 
-const HeroSection = () => {
+const HeroSection = ({ enterApplication }) => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -20,7 +21,7 @@ const HeroSection = () => {
   };
 
   return (
-    <HeroContainer>
+    <HeroContainer id='landing'>
       <HeroBg>
         <VideoBg autoPlay loop muted src='/video.mp4' />
       </HeroBg>
@@ -34,8 +35,9 @@ const HeroSection = () => {
             onMouseLeave={onHover}
             primary='true'
             dark='true'
+            onClick={enterApplication}
           >
-            Dive in {hover ? <ArrowForward /> : <ArrowRight />}
+            Learn more! {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

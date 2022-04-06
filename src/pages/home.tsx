@@ -6,17 +6,33 @@ import NavBar from '../components/NavBar';
 import SideBar from '../components/SideBar';
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [landingPage, setLandingPage] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
 
+  const enterApplication = () => {
+    setLandingPage(!landingPage);
+    if (isOpen === true) setIsOpen(false);
+  };
+
+  console.log(landingPage);
   return (
     <>
-      <SideBar isOpen={isOpen} toggle={toggle} />
-      <NavBar toggle={toggle} />
-      <HeroSection />
-      <InfoSection {...HomeObjOne} />
+      {landingPage === false ? (
+        <HeroSection enterApplication={enterApplication} />
+      ) : (
+        <>
+          <NavBar toggle={toggle} />
+          <InfoSection {...HomeObjOne} />
+        </>
+      )}
+      <SideBar
+        isOpen={isOpen}
+        toggle={toggle}
+        enterApplication={enterApplication}
+      />
     </>
   );
 };

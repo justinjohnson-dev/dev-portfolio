@@ -8,7 +8,7 @@ import {
   SideBarLink,
 } from './SideBarElements';
 
-const SideBar = ({ isOpen, toggle }) => {
+const SideBar = ({ isOpen, toggle, enterApplication }) => {
   return (
     <SideBarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
@@ -16,6 +16,9 @@ const SideBar = ({ isOpen, toggle }) => {
       </Icon>
       <SideBarWrapper>
         <SideBarMenu>
+          <SideBarLink to='landing' onClick={enterApplication}>
+            Landing
+          </SideBarLink>
           <SideBarLink to='about' onClick={toggle}>
             About
           </SideBarLink>

@@ -21,6 +21,15 @@ const SideBar = ({ isOpen, toggle, enterApplication }) => {
         <SideBarLink to='about' onClick={toggle}>
           About
         </SideBarLink>
+        <SideBarLink to='projects' onClick={toggle}>
+          Projects
+        </SideBarLink>
+        <SideBarLink to='experience' onClick={toggle}>
+          Experience
+        </SideBarLink>
+        <SideBarLink to='contact' onClick={toggle}>
+          Contact
+        </SideBarLink>
       </SideBarWrapper>
     </SideBarContainer>
   );

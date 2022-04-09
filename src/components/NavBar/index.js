@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {
   Nav,
   NavBarContainer,
@@ -29,18 +29,6 @@ const NavBar = ({ toggle }) => {
               <FaBars />
             </MobileIcon>
             <NavMenu>
-              <NavItem>
-                <NavLinks
-                  to='test'
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact='true'
-                  offset={-80}
-                >
-                  test
-                </NavLinks>
-              </NavItem>
               <NavItem>
                 <NavLinks
                   to='about'

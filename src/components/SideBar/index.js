@@ -18,9 +18,6 @@ const SideBar = ({ isOpen, toggle, enterApplication }) => {
         <SideBarLink to='landing' onClick={enterApplication}>
           Landing
         </SideBarLink>
-        <SideBarLink to='test' onClick={toggle}>
-          test
-        </SideBarLink>
         <SideBarLink to='about' onClick={toggle}>
           About
         </SideBarLink>

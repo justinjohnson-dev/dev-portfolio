@@ -15,14 +15,15 @@ const SideBar = ({ isOpen, toggle, enterApplication }) => {
         <CloseIcon />
       </Icon>
       <SideBarWrapper>
-        <SideBarMenu>
-          <SideBarLink to='landing' onClick={enterApplication}>
-            Landing
-          </SideBarLink>
-          <SideBarLink to='about' onClick={toggle}>
-            About
-          </SideBarLink>
-        </SideBarMenu>
+        <SideBarLink to='landing' onClick={enterApplication}>
+          Landing
+        </SideBarLink>
+        <SideBarLink to='test' onClick={toggle}>
+          test
+        </SideBarLink>
+        <SideBarLink to='about' onClick={toggle}>
+          About
+        </SideBarLink>
       </SideBarWrapper>
     </SideBarContainer>
   );

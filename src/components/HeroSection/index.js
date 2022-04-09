@@ -23,7 +23,7 @@ const HeroSection = ({ enterApplication }) => {
   return (
     <HeroContainer id='landing'>
       <HeroBg>
-        <VideoBg autoPlay loop muted src='/video.mp4' />
+        <VideoBg autoPlay loop muted src='/test.mp4' />
       </HeroBg>
       <HeroContent>
         <HeroH1>@ Justin Johnson</HeroH1>

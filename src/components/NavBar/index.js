@@ -22,7 +22,7 @@ const NavBar = ({ toggle }) => {
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav>
           <NavBarContainer>
-            <NavLogo href='/home' onClick={toggleHome}>
+            <NavLogo href='/' onClick={toggleHome}>
               Justin-Johnson-Dev
             </NavLogo>
             <MobileIcon onClick={toggle}>

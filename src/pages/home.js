@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection/';
 import InfoSection from '../components/InfoSection/';
 import { HomeObjOne } from '../components/InfoSection/Data';
@@ -26,6 +27,7 @@ const HomePage = () => {
         <>
           <NavBar toggle={toggle} />
           <InfoSection {...HomeObjOne} />
+          <Footer />
         </>
       )}
       <SideBar

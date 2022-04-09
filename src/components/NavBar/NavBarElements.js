@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
 export const Nav = styled.nav`
-  background: #000;
+  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
   height: 80px;
   margintop: -80px;
   display: flex;

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import About from '../components/About';
-import Contact from '../components/Contact';
-import Experience from '../components/Experience';
-import Footer from '../components/Footer';
-import HeroSection from '../components/HeroSection/';
-import NavBar from '../components/NavBar';
-import Projects from '../components/Projects';
-import SideBar from '../components/SideBar';
+import About from '../About';
+import Contact from '../Contact';
+import Experience from '../Experience';
+import Footer from '../Footer';
+import HeroSection from '../HeroSection/';
+import NavBar from '../NavBar';
+import Projects from '../Projects';
+import SideBar from '../SideBar';
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [landingPage, setLandingPage] = useState(false);
